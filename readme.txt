@@ -1,52 +1,48 @@
 === Plugin Name ===
 Contributors: optimaldevs
 Donate link: http://optimaldevs.com/
-Tags: login, sexy, ajax, authentication, sidebar, widget, user, ssl, secury, admin bar
-Requires at least: 3.0
+Tags: creative, commons, generator, post, attribution, cc, cc license, creative commons, legal, license, metadata, rights
+Requires at least: 2.8
 Tested up to: 3.4.5
 Stable tag: 1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Simple and cool login widget for your WordPress! AJAX, support SSL, show avatar, profile button, register button...
+This plugin display a Creative Commons banner below your posts in WordPress. All metadata included.
 
 == Description ==
 
-This plugin allow you to get a sexy login widget in your WordPress. It’s useful for sites that would like to avoid the normal WordPress login pages. Sexy Login uses AJAX and jQuery effects, but have a fallback mechanism for javascript-disabled browsers.
+Creative Commons Generator allows you to configure the Creative Commons license and include it in your blog posts to protect against misuse or unauthorized use.
 
 Features:
 
-* AJAX Login and error handling without refreshing your screen.
-* Compatible with WordPress  3.0 or higher.
-* Compatible with Internet Explorer, Safari, Chrome, Firefox, Opera.
-* Work with forced SSL logins.
-* Fallback mechanism, still work on javascript-disabled browsers.
-* Widget option to disable the default style.
-* Widget specific option to show link to profile page and dashboard.
-* Widget option to show or hide avatar.
-* Languages: the same of your WordPress! (It’s multi-language).
-
-[Try Demo](http://optimaldevs.com/demo/ "Try Sexy Login demo.") 
-
-== Installation ==
-
-1. Upload sexy-login to wp-content/plugins
-2. Click "Activate" in the WordPress plugins menu
-1. Place "Sexy Login" widget in your sidebar
+* Official banner images provided by creativecommons.org.
+* Version 3.0 and International jurisdiction license.
+* General settings for all post published.
+* Specific settings for each post.
+* Including metadata, according creativecommons.org.
+* Multi-language, currently translated into English and Spanish.
+* Simple and easy to use, no manual editing of files is needed.
 
 == Screenshots ==
 
-1. Sexy Login widget.
+1. Creative Commons banner and metadata below a post.
+
+== Installation ==
+
+1. Upload creative-commons-generator to wp-content/plugins
+2. Click "Activate" in the WordPress plugins menu
+1. Visit the plugin's administration panel at Settings->CCG Options to read the detailed instructions about customizing the display of license information.
 
 == Frequently Asked Questions ==
 
-= Does Sexy Login support SSL mode? =
+= Where is displayed the banner? =
 
-Yes.
+After the content of the post, at the end. 
 
-= Can i change de style? =
+= The banner is displayed on pages? =
 
-Yes, you can remove the custom style throught widget options.
+No, only in posts.
 
 == Changelog ==
 
