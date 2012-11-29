@@ -1,5 +1,5 @@
 ﻿=== Plugin Name ===
-Contributors: optimaldevs
+Contributors: OptimalDevs
 Donate link: http://optimaldevs.com/
 Tags: creative, commons, generator, post, attribution, cc, cc license, creative commons, legal, license, metadata, rights
 Requires at least: 2.8
