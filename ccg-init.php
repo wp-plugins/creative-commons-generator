@@ -3,7 +3,7 @@
 Plugin Name: Creative Commons Generator
 Plugin URI: http://wordpress.org/extend/plugins/creative-commons-generator/
 Description: A Creative Commons banner for Wordpress!. 
-Version: 1.0
+Version: 1.1
 Author: OptimalDevs
 Author URI: http://optimaldevs.com/
 */
