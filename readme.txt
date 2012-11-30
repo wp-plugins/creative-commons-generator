@@ -4,7 +4,7 @@ Donate link: http://optimaldevs.com/
 Tags: creative, commons, generator, post, attribution, cc, cc license, creative commons, legal, license, metadata, rights
 Requires at least: 2.8
 Tested up to: 3.4.5
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,6 +45,10 @@ After the content of the post, at the end.
 No, only in posts.
 
 == Changelog ==
+
+= 1.1 =
+* Added uninstall.php file.
+* the_content display filter priority has upload to 100.
 
 = 1.0 =
 * Initial release
