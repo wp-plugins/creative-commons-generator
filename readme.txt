@@ -47,8 +47,4 @@ No, only in posts.
 == Changelog ==
 
 = 1.1 =
-* Added uninstall.php file.
-* the_content display filter priority has upload to 100.
-
-= 1.0 =
 * Initial release

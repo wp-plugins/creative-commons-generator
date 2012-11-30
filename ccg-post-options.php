@@ -1,6 +1,6 @@
 <?php
 add_action( 'admin_init', 'ccg_add_meta_box', 1 );
-add_action( 'save_post', 'ccg_save_post_data' );
+add_action('save_post', 'ccg_save_post_data');
 
 function ccg_add_meta_box() {
 	 add_meta_box( 
@@ -37,6 +37,9 @@ function ccg_meta_box( $post ) {
 		$ccg_author_url = esc_url( get_author_posts_url( $current_user->ID ) );
 		echo ccg_get_banner( $ccg_old_options, "publish" ); 
 	}
+	
+	// Preview
+	
 	
 ?>
 	<table class="widefat" style="margin: 10px 0;" >

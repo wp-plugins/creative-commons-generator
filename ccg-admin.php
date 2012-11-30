@@ -13,7 +13,7 @@ function ccg_menu() {
 }
 
 function ccg_set_default() {
-	if ( !get_option( 'ccg_options' ) ) {
+	if ( !get_option('ccg_options') ) {
 		$ccg_options = array();
 		$ccg_options['active'] = TRUE; 
 		$ccg_options['mod'] = "yes";
