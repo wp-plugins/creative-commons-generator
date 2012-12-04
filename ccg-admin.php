@@ -14,19 +14,21 @@ function ccg_menu() {
 
 function ccg_set_default() {
 	if ( !get_option( 'ccg_options' ) ) {
-		$ccg_options = array();
-		$ccg_options['active'] = TRUE; 
-		$ccg_options['mod'] = "yes";
-		$ccg_options['disallow_mon'] = TRUE;
-		$ccg_options['show_title'] = FALSE;
-		$ccg_options['title'] = "";
-		$ccg_options['show_author'] = TRUE;
-		$ccg_options['author_name'] = "";
-		$ccg_options['show_author_url'] = TRUE;
-		$ccg_options['author_url'] = "";
-		$ccg_options['source_url'] = "";
-		$ccg_options['more_url'] = "";
-		$ccg_options['format'] = 'other';
+		$ccg_options = array(
+			'active' => TRUE,
+			'mod' => 'yes',
+			'disallow_mon' => TRUE,
+			'show_title' => FALSE,
+			'title' => '',
+			'show_author' => TRUE,
+			'author_name' => "",
+			'show_author_url' => TRUE,
+			'author_url' => '',
+			'source_url' => '',
+			'more_url' => '',
+			'format' => 'other'
+		);
+		
 		update_option( 'ccg_options', $ccg_options );
 	}
 }
@@ -57,8 +59,8 @@ function ccg_get_banner( $ccg_options, $who_call ) {
 		$attributes_text .= __( '-NoDerivs', 'ccg-domain' );
 	}
 
-	$banner = "<a target='_blank' rel='license' href='http://creativecommons.org/licenses/" . $attributes . "/3.0/'><img alt='Creative Commons License' style='border-width:0' src='http://i.creativecommons.org/l/" . $attributes . "/3.0/88x31.png' /></a><br />";
-	$islicensed =  ' is licensed under a <a rel="license" href="http://creativecommons.org/licenses/' . $attributes . '/3.0/">' . $attributes_text . ' 3.0 Unported</a><br />';
+	$banner = "<a target='_blank' rel='license nofollow' href='http://creativecommons.org/licenses/" . $attributes . "/3.0/'><img alt='Creative Commons License' style='border-width:0' src='http://i.creativecommons.org/l/" . $attributes . "/3.0/88x31.png' /></a><br />";
+	$islicensed =  ' is licensed under a <a target="_blank" rel="license nofollow" href="http://creativecommons.org/licenses/' . $attributes . '/3.0/">' . $attributes_text . ' 3.0 Unported</a><br />';
 	
 	switch ( $who_call ) {
 		case "admin":
@@ -94,16 +96,16 @@ function ccg_get_banner( $ccg_options, $who_call ) {
 	//Show Author and URL
 	if ( $ccg_options['show_author'] == TRUE && $author_name != "" ) {
 		if ( $ccg_options['show_author_url'] == TRUE && $author_url != "") 
-			$author = ' by <a xmlns:cc="http://creativecommons.org/ns#" href="' . $author_url . '" property="cc:attributionName" rel="cc:attributionURL">'. $author_name.'</a>';
+			$author = ' by <a target="_blank" xmlns:cc="http://creativecommons.org/ns#" href="' . $author_url . '" property="cc:attributionName" rel="cc:attributionURL nofollow">'. $author_name.'</a>';
 		else
 			$author = ' by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">' . $author_name . '</span>.';
 	}
 
 	//Show Source URL
-	if ( $ccg_options['source_url'] != "" )	$source = 'Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="' . $ccg_options["source_url"] . '" rel="dct:source">' . $ccg_options["source_url"] . '</a><br />';
+	if ( $ccg_options['source_url'] != "" )	$source = 'Based on a work at <a target="_blank" xmlns:dct="http://purl.org/dc/terms/" href="' . $ccg_options["source_url"] . '" rel="dct:source nofollow">' . $ccg_options["source_url"] . '</a><br />';
 	
 	//Show More Permissions
-	if ($ccg_options['more_url'] != "")	$more = 'Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="' . $ccg_options['more_url'] . '" rel="cc:morePermissions">' . $ccg_options['more_url'] . '</a>';
+	if ($ccg_options['more_url'] != "")	$more = 'Permissions beyond the scope of this license may be available at <a target="_blank" xmlns:cc="http://creativecommons.org/ns#" href="' . $ccg_options['more_url'] . '" rel="cc:morePermissions nofollow">' . $ccg_options['more_url'] . '</a>';
 	
 	$result = "<div class='ccg-banner'>" . $banner . $title . $author . $islicensed . $source . $more . "</div>";
 	return $result;
