@@ -3,7 +3,7 @@ Contributors: OptimalDevs, Alejandro Galvez, Andy Hernandez
 Donate link: http://optimaldevs.com/
 Tags: creative, commons, generator, post, attribution, cc, cc license, creative commons, legal, license, metadata, rights
 Requires at least: 2.8
-Tested up to: 4.2.4
+Tested up to: 4.3
 Stable tag: 1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -49,7 +49,7 @@ No, only in posts.
 = 1.4 =
 * Updated to Creative Commons License 4.0.
 * Now it's compatible with custom post types.
-* Tested with Wordpress 4.2.4.
+* Tested with Wordpress 4.3.
 
 = 1.3 =
 * Added target=_blank for all links.
