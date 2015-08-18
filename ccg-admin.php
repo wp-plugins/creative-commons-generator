@@ -13,7 +13,9 @@ function ccg_menu() {
 }
 
 function ccg_set_default() {
+	
 	if ( !get_option( 'ccg_options' ) ) {
+		
 		$ccg_options = array(
 			'active' => TRUE,
 			'mod' => 'yes',
@@ -31,6 +33,7 @@ function ccg_set_default() {
 		
 		update_option( 'ccg_options', $ccg_options );
 	}
+	
 }
 
 function ccg_get_banner( $ccg_options, $who_call ) {
@@ -59,8 +62,8 @@ function ccg_get_banner( $ccg_options, $who_call ) {
 		$attributes_text .= __( '-NoDerivs', 'ccg-domain' );
 	}
 
-	$banner = "<a target='_blank' rel='license nofollow' href='http://creativecommons.org/licenses/" . $attributes . "/3.0/'><img alt='Creative Commons License' style='border-width:0' src='http://i.creativecommons.org/l/" . $attributes . "/3.0/88x31.png' /></a><br />";
-	$islicensed =  ' is licensed under a <a target="_blank" rel="license nofollow" href="http://creativecommons.org/licenses/' . $attributes . '/3.0/">' . $attributes_text . ' 3.0 Unported</a><br />';
+	$banner = "<a target='_blank' rel='license nofollow' href='http://creativecommons.org/licenses/" . $attributes . "/4.0/'><img alt='Creative Commons License' style='border-width:0' src='http://i.creativecommons.org/l/" . $attributes . "/4.0/88x31.png' /></a><br />";
+	$islicensed =  ' is licensed under a <a target="_blank" rel="license nofollow" href="http://creativecommons.org/licenses/' . $attributes . '/4.0/">' . $attributes_text . ' 4.0 ' . __( 'International', 'ccg-domain' ) . '</a><br />';
 	
 	switch ( $who_call ) {
 		case "admin":
@@ -126,7 +129,7 @@ function ccg_set_options( $form ) {
 	if ( isset( $form['ccg_source'] ) ) $ccg_options['source_url'] = esc_attr( esc_url( $form['ccg_source'] ) ); else $ccg_options['source_url'] = "";
 	$ccg_options['more_url'] = esc_attr( esc_url( $form['ccg_more'] ) );
 	$ccg_options['format'] = $form['ccg_format'];
-	
+
 	return $ccg_options;
 }
 

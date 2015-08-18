@@ -1,10 +1,10 @@
 ﻿=== Plugin Name ===
-Contributors: OptimalDevs
+Contributors: OptimalDevs, Alejandro Galvez, Andy Hernandez
 Donate link: http://optimaldevs.com/
 Tags: creative, commons, generator, post, attribution, cc, cc license, creative commons, legal, license, metadata, rights
 Requires at least: 2.8
-Tested up to: 3.4.5
-Stable tag: 1.3
+Tested up to: 4.2.4
+Stable tag: 1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,8 +17,8 @@ Creative Commons Generator allows you to configure the Creative Commons license 
 Features:
 
 * Official banner images provided by creativecommons.org.
-* Version 3.0 and International jurisdiction license.
-* General settings for all post published.
+* Version 4.0 and International jurisdiction license.
+* General settings for all post published (custom post types included).
 * Specific settings for each post.
 * Including metadata, according creativecommons.org.
 * Multi-language, currently translated into English and Spanish.
@@ -45,6 +45,11 @@ After the content of the post, at the end.
 No, only in posts.
 
 == Changelog ==
+
+= 1.4 =
+* Updated to Creative Commons License 4.0.
+* Now it's compatible with custom post types.
+* Tested with Wordpress 4.2.4.
 
 = 1.3 =
 * Added target=_blank for all links.
